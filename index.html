@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-wrapper">
+    <div class="header-content-wrapper">
+      <h1 class="topic">Create Account</h1>
+      <img src="img/foxminded-logo.svg"
+           alt="foxminded-logo"
+           class="logo">
+    </div>
+  </header>
+  <main class="main-wrapper">
+    <form method="post"
+          action=""
+          class="form-wrapper">
+      <fieldset class="inputs-wrapper">
+        <div>
+          <label for="first-name"
+                 class="description">First name*</label>
+          <input type="text"
+                 id="first-name"
+                 name="first-name"
+                 class="input-text"
+                 placeholder="Enter your first name"
+                 required>
+        </div>
+        <div>
+          <label for="last-name"
+                 class="description">Last name*</label>
+          <input type="text"
+                 id="last-name"
+                 name="last-name"
+                 class="input-text"
+                 placeholder="Enter your last name"
+                 required>
+        </div>
+        <div class="email-wrapper">
+          <label for="email"
+                 class="description">Email*</label>
+          <input type="email"
+                 id="email"
+                 name="email"
+                 class="input-text"
+                 placeholder="Enter your email"
+                 required>
+        </div>
+        <div>
+          <label for="password"
+                 class="description">Password*</label>
+          <input type="password"
+                 id="password"
+                 name="password"
+                 class="input-text valid"
+                 placeholder="Enter your password"
+                 required>
+        </div>
+        <div class="confirm-password-wrapper">
+          <label for="confirmPassword"
+                 class="description">Confirm Password*</label>
+          <input type="password"
+                 id="confirmPassword"
+                 name="confirm-password"
+                 class="input-text invalid"
+                 placeholder="Confirm your password"
+                 required>
+        </div>
+      </fieldset>
+      <fieldset class="inputs-wrapper">
+        <div class="gender-wrapper">
+          <label class="description">Gender:</label>
+          <div class="radio-input-wrapper">
+            <div class="radio-input">
+              <input type="radio"
+                     id="male"
+                     name="gender"
+                     class="btn-input"
+                     checked>
+              <label for="male"
+                     class="btn-text">Male</label>
+            </div>
+            <div class="radio-input">
+              <input type="radio"
+                     id="female"
+                     name="gender"
+                     class="btn-input">
+              <label for="female"
+                     class="btn-text">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="hobbies-wrapper">
+          <label class="description">Hobbies:</label>
+          <div class="checkbox-input-wrapper">
+            <div class="radio-input">
+              <input type="checkbox"
+                     id="music"
+                     name="gender"
+                     class="btn-input btn-radio-input">
+              <label for="music"
+                     class="btn-text">Music</label>
+            </div>
+            <div class="radio-input">
+              <input type="checkbox"
+                     id="sports"
+                     name="gender"
+                     class="btn-input btn-radio-input">
+              <label for="sports"
+                     class="btn-text">Sports</label>
+            </div>
+            <div class="radio-input">
+              <input type="checkbox"
+                     id="travel"
+                     name="gender"
+                     class="btn-input btn-radio-input">
+              <label for="travel"
+                     class="btn-text">Travel</label>
+            </div>
+            <div class="radio-input">
+              <input type="checkbox"
+                     id="movies"
+                     name="gender"
+                     class="btn-input btn-radio-input">
+              <label for="movies"
+                     class="btn-text">Movies</label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="inputs-wrapper">
+        <div>
+          <label for="source-of-income"
+                 class="description">Source of Income</label>
+          <div class="btn-select-wrapper">
+            <select id="source-of-income"
+                    name="source-of-income"
+                    class="btn-select">
+              <option value="1">Employed</option>
+              <option value="2">Unemployed</option>
+            </select>
+            <img src="img/chevron-down.svg"
+                 alt=""
+                 class="arrow-btn">
+            <img src="img/chevron-down.svg"
+                 alt=""
+                 class="arrow-btn">
+          </div>
+        </div>
+        <div class="wrapper-range-input">
+          <label for="rangeInput"
+                 class="description">Income</label>
+          <input type="range"
+                 id="rangeInput"
+                 name="range-input"
+                 min="0"
+                 max="100"
+                 step="1"
+                 class="range-input"
+                 value="50">
+          <p class="income-value" id="incomeValue">50K</p>
+        </div>
+      </fieldset>
+      <fieldset class="inputs-wrapper">
+        <div>
+          <label class="description">Upload Profile Picture</label>
+          <div class="profile-picture-wrapper">
+            <div class="profile-picture-btn">
+              <input type="file"
+                     id="profile-picture"
+                     name="file"
+                     class="profile-picture">
+            </div>
+            <label class="info" for="profile-picture">No file chosen</label>
+          </div>
+        </div>
+        <div>
+          <label for="age"
+                 class="description">Age</label>
+          <input id="age"
+                 type="number"
+                 name="age"
+                 min="13"
+                 max="120"
+                 placeholder="Enter your age"
+                 class="input-text input-number">
+        </div>
+        <div class="input-bio-wrapper">
+          <label for="textareaInput"
+                 class="description">Bio</label>
+          <div class="textarea-wrapper">
+            <textarea name="textarea"
+                      id="textareaInput"
+                      placeholder="Tell about yourself"
+                      class="input-text input-textarea"></textarea>
+            <img src="img/textarea-resize-handle.svg"
+                 alt=""
+                 class="textarea-resize-btn">
+          </div>
+        </div>
+      </fieldset>
+      <input type="submit"
+             value="Create" class="input-submit">
+    </form>
+  </main>
+  <script src="input.js"></script>
+</body>
+</html>
